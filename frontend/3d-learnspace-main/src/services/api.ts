@@ -1,4 +1,10 @@
-const API_BASE = "http://127.0.0.1:8000";
+import axios from "axios";
+
+export const API_BASE = "https://edu3d-project-backup.onrender.com";
+
+const api = axios.create({
+  baseURL: API_BASE,
+});
 
 export const loginUser = async (data:any) => {
   const res = await fetch(`${API_BASE}/api/login/`, {
