@@ -99,6 +99,13 @@ DATABASES = {
     }
 }
 
+ALLOWED_HOSTS = [
+    "edu3d-project-backup.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+DEBUG = False
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
